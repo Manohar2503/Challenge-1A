@@ -12,7 +12,6 @@ A fast, offline PDF outline extractor that generates structured JSON with docume
 **Build the Docker image:**
    ```bash
    docker build -t pdf_extractor .
-   ./build.sh
    ```
 
 2. **Prepare your PDFs:**
@@ -24,7 +23,7 @@ A fast, offline PDF outline extractor that generates structured JSON with docume
 
 3. **Run the extraction:**
    ```bash
-   # Linux/Mac Bash Example (optional)
+   # Linux/Mac Bash Example 
 docker run --rm \
   -v "${PWD}/input:/app/input" \
   -v "${PWD}/output:/app/output" \
